@@ -43,6 +43,10 @@ p {
   color: grey;
 }
 
+a {
+  color: grey;
+}
+
 
 .button a {
   text-decoration: none;
