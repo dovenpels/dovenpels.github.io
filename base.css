@@ -53,8 +53,8 @@ a {
   font-size: 20px;
   font-weight: 600;
   color: black;
+  letter-spacing: -0.020em;
   border-bottom: solid 2px;
-  line-height: 2;
   display: inline-block;
   line-height: 2.2;
 }
