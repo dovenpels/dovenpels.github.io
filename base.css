@@ -11,6 +11,10 @@
   -moz-osx-font-smoothing:grayscale;
 }
 
+html {
+  background-color: #EFEEF3;
+}
+
 *:visited
 {
   color:inherit;
@@ -51,6 +55,38 @@ header {
 
 
 
+.call-out-container {
+  margin: auto;
+  background-color: #fff;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 20px;
+  padding: 50px 10px 50px 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.call-out {
+  display: flex;
+  justify-content: space-between;
+}
+
+.call-out:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.call-out-hero {
+  margin: auto;
+  max-width: 50px;
+  flex-basis: 10%;
+}
+
+.call-out-text {
+  margin: auto;
+  flex-basis: 75%;
+}
+
+
+
 /* ny kode slutt*/
 
 
@@ -83,8 +119,7 @@ h1 {
   margin-bottom: 64px;
 }
 
-h2,
-h3 {
+h2 {
   font-size: 24px;
   line-height:32px;
   padding-top: 11px;
@@ -94,13 +129,14 @@ h3 {
   margin-bottom: 32px;
   text-align: center;
 }
-
+h3,
 h4,
 h5,
 h6 {
   font-size: 20px;
   line-height:32px;
   font-weight:600;
+  margin-bottom: 11px;
 }
 
 p, ul, ol {
@@ -128,6 +164,7 @@ ol, ul {
 
 p>a,
 li>a,
+h3>a,
 footer a
 {
   background:linear-gradient(to right, hsl(338, 29%, 46%, 0.2), hsl(338, 29%, 46%, 0.4));
@@ -138,6 +175,7 @@ footer a
 }
 
 p>a:hover,
+h3>a:hover,
 li>a:hover,
 footer a:hover {
   background-position:100% 100%
@@ -159,7 +197,8 @@ figure {
   margin-bottom: 96px;
 }
 
-.hd-1 {
+.hd-1,
+.call-out-container {
   max-width: 720px;
 }
 
