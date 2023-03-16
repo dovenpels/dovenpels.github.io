@@ -35,11 +35,9 @@ body {
 }
 
 header {
-  position: fixed;
-  margin: auto;
-  padding: 25px 25px;
-  
-
+    position: relative;
+    text-align: right;
+    padding: 25px 25px;
 }
 
 .menu a {
@@ -60,14 +58,9 @@ header {
   background-color: #fff;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
   border-radius: 20px;
-  padding: 50px 10px 50px 10px;
+  padding: 50px 25px 50px 25px;
   margin-top: 10px;
   margin-bottom: 20px;
-}
-
-.call-out {
-  display: flex;
-  justify-content: space-between;
 }
 
 .call-out:not(:last-child) {
@@ -77,7 +70,6 @@ header {
 .call-out-hero {
   margin: auto;
   max-width: 50px;
-  flex-basis: 10%;
 }
 
 .call-out-text {
@@ -92,7 +84,7 @@ header {
 
 
 main {
-  padding: 140px 25px 25px;
+    padding: 10px 25px 25px;
 }
 
 h1,
@@ -237,15 +229,29 @@ footer a {
   line-height: 35px;
 }
 
-@media only screen and (max-width: 1296px) {
-  header {
-    position: relative;
-    text-align: right;
 
+@media (min-width: 1296px) {
+
+  header {
+    position: fixed;
+    margin: auto;
+    padding: 25px 25px;
+  }
+
+  .call-out {
+    display: flex;
+    justify-content: space-between;
   }
   main {
-    padding: 10px 25px 25px;
+    padding: 140px 25px 25px;
   }
+}
 
 
+@media (min-width: 627px) {
+
+  .call-out {
+    display: flex;
+    justify-content: space-between;
+  }
 }
