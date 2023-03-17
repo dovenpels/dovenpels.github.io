@@ -63,29 +63,35 @@ header {
   margin-bottom: 20px;
 }
 
-.call-out:not(:last-child) {
-  margin-bottom: 50px;
-}
 
 .call-out-hero {
+  display: block;
+  width: 50px;
   margin: auto;
-  max-width: 50px;
+  margin-bottom: 30px;
 }
 
 .call-out-text {
   margin: auto;
-  flex-basis: 75%;
+  text-align: center;
 }
 
 
 
 /* ny kode slutt*/
 
+canvas {
+  margin: auto;
+}
+
 
 
 main {
-    padding: 10px 25px 25px;
+  
+  padding: 100px 25px 25px;
 }
+
+
 
 h1,
 h2,
@@ -141,6 +147,7 @@ p + p {
   text-indent: 3rem;
 }
 
+
 a {
   font-weight:inherit;
   font-size:inherit;
@@ -180,7 +187,7 @@ hr {
   height:2px;
   margin-top:100px;
   margin-bottom:70px;
-  background: hsl(0,0%,97%);
+  background: hsl(0, 0%, 100%);
   width: 288px;
 }
 
@@ -199,7 +206,8 @@ figure {
 }
 
 .figure img,
-#player {
+#player,
+#canvas {
   display:block;
   width:100%;
   height:auto;
@@ -221,6 +229,7 @@ figcaption {
 
 footer {
   margin-top:6rem;
+  margin-bottom: 30px;
   text-align:center
 }
 
@@ -230,22 +239,7 @@ footer a {
 }
 
 
-@media (min-width: 1296px) {
 
-  header {
-    position: fixed;
-    margin: auto;
-    padding: 25px 25px;
-  }
-
-  .call-out {
-    display: flex;
-    justify-content: space-between;
-  }
-  main {
-    padding: 140px 25px 25px;
-  }
-}
 
 
 @media (min-width: 627px) {
@@ -254,4 +248,22 @@ footer a {
     display: flex;
     justify-content: space-between;
   }
+
+  .call-out-text {
+    flex-basis: 75%;
+    text-align: left;
+  }
+
+
+
+  main {
+    padding: 160px 25px 25px;
+  }
+}
+
+
+
+
+.animation-container {
+max-width: 720px;
 }
